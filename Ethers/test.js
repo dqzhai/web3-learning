@@ -1,3 +1,9 @@
+/*
+ * test.js
+ * Copyright 2026 Qunhe Tech, all rights reserved.
+ * Qunhe PROPRIETARY/CONFIDENTIAL, any form of usage is subject to approval.
+ */
+
 // 纯Node.js环境下的permit调用脚本
 
 // 第一步：ES模块语法导入dotenv（必须在最开头）
@@ -35,10 +41,10 @@ async function main() {
     console.log(`当前网络: Sepolia (chainId: ${(await provider.getNetwork()).chainId})`);
 
     // 合约地址（已在原始脚本中提供）
-    const tokenAddress = '0x43614Ebd11B32A138ba424bd008b87185Bc52aA1'; // MyToken 合约地址
+    const tokenAddress = '0x0a54557dD21566862F683F083253ec7d5688897D'; // MyToken 合约地址
 
     // PermitTransfer合约地址，请替换为实际部署地址
-    const permitTransferAddress = '0x7Fb87B046756a709D522Af30C8F202CAFBfe2e14'; // 需要替换为实际部署的地址
+    const permitTransferAddress = '0x41856383f0c518e79d95231a29F127be5B2Dd5D4'; // 需要替换为实际部署的地址
     console.log(`PermitTransfer 合约地址: ${permitTransferAddress}`);
 
     // 设置一个测试用的 spender 地址 - 现在是PermitTransfer合约地址
@@ -46,7 +52,7 @@ async function main() {
     console.log(`Spender 地址: ${spenderAddress}`);
 
     // 设置接收者地址（转账目标）
-    const receiverAddress = "0x7Fb87B046756a709D522Af30C8F202CAFBfe2e14"; // 可以替换为任意地址
+    const receiverAddress = "0x19a3a92FB7020a40Bc6De1811761a86c45FEBf9c"; // 可以替换为任意地址
     console.log(`接收者地址: ${receiverAddress}`);
 
     const amount = ethers.parseUnits("100", 18); // 授权 100 MTK
