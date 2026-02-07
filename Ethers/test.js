@@ -1,13 +1,14 @@
-
 // 纯Node.js环境下的permit调用脚本
-
-// 第一步：ES模块语法导入dotenv（必须在最开头）
+// ES
 import dotenv from 'dotenv';
-// const { ethers } = require('ethers');
 import {ethers} from 'ethers';
-//require('dotenv').config();
-// 第二步：加载.env文件，和require('dotenv').config()作用完全一致
+
 dotenv.config();
+
+// // 1. 先加载dotenv（必须在最开头，确保环境变量优先加载）
+// require('dotenv').config();
+// // 2. 再导入ethers（此时环境变量已生效）
+// const {ethers} = require('ethers');
 
 
 async function main() {
