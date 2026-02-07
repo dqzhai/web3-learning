@@ -1,8 +1,3 @@
-/*
- * test.js
- * Copyright 2026 Qunhe Tech, all rights reserved.
- * Qunhe PROPRIETARY/CONFIDENTIAL, any form of usage is subject to approval.
- */
 
 // 纯Node.js环境下的permit调用脚本
 
